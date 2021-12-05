@@ -1,0 +1,34 @@
+$headingColor: rgba(31, 32, 65, 1);
+$mainColor: rgba(31,32,65,0.75);
+
+h1{
+  font-size: 24px;
+  font-weight: 700;
+  color: $headingColor;
+}
+h2{
+  font-size: 19px;
+  font-weight: 700;
+  color: $headingColor;
+}
+h3{
+  font-size: 12px;
+  font-weight: 700;
+  color: $headingColor;
+}
+p{
+  font-size: 14px;
+  font-weight: 400;
+  color: $mainColor;
+}
+.container{
+  width: 1062px;
+  height: 540px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 3px solid blue;
+}
+.colorList{
+  list-style-type: none;
+}

@@ -1,4 +1,6 @@
 body{
+  display: flex;
+  align-items: center;
   width: 100%;
   height: 100vh;
   margin: 0;
@@ -12,35 +14,4 @@ body{
 }
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
-}
-h1{
-  font-size: 24px;
-  font-weight: 700;
-  color: rgba(31, 32, 65, 1);
-}
-h2{
-  font-size: 19px;
-  font-weight: 700;
-  color: rgba(31, 32, 65, 1);
-}
-h3{
-  font-size: 12px;
-  font-weight: 700;
-  color: rgba(31, 32, 65, 1);
-}
-p{
-  font-size: 14px;
-  font-weight: 400;
-  color: rgba(31,32,65,0.75)
-}
-container{
-  width: 1062px;
-  height: 540px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border: 3px solid blue;
-}
-.colorList{
-  list-style-type: none;
 }
