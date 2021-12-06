@@ -1,0 +1,77 @@
+.column, .list__elem, .colorBox, .title, .title_sup {
+  border: 0px solid black;
+}
+
+.column {
+  max-width: 281.26px;
+  margin-left: 149.74px;
+}
+
+.list__elem {
+  display: flex;
+  align-items: center;
+  margin: 0px 0px 20px 0;
+}
+
+.colorBox {
+  width: 70px;
+  height: 70px;
+  background-color: rgba(31, 32, 65);
+  border-radius: 5px;
+}
+
+.title {
+  margin: 0px 0px 0px 20px;
+}
+
+.title_sup {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 19px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+}
+.title_sub{
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+
+}
+.col1 {
+  background-color: #1F2041;
+  opacity: 1;
+}
+
+.col2 {
+  background-color: #1F2041;
+  opacity: 0.75;
+}
+
+.col3 {
+  background-color: #1F2041;
+  opacity: 0.50;
+}
+
+.col4 {
+  background-color: #1F2041;
+  opacity: 0.25;
+}
+
+.col5 {
+  background-color: #1F2041;
+  opacity: 0.05;
+}
+
+.col6 {
+  background-color: #BC9CFF;
+}
+
+.col7 {
+  background-color: #6FCF97;
+}

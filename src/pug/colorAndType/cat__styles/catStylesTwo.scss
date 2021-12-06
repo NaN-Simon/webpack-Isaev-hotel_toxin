@@ -1,34 +1,29 @@
 $headingColor: rgba(31, 32, 65, 1);
-$mainColor: rgba(31,32,65,0.75);
+$mainColor: rgba(31, 32, 65, 0.75);
+$lightColor: rgba(31, 32, 65, 0.25);
+$mainFont: Montserrat;
 
-h1{
+.headingGroup {
+  border: 0px solid black;
+  font-family: $mainFont;
+  width: 436px;
+  height: 321px;
+}
+
+h1 {
   font-size: 24px;
   font-weight: 700;
   color: $headingColor;
 }
-h2{
+
+h2 {
   font-size: 19px;
   font-weight: 700;
   color: $headingColor;
 }
-h3{
+
+h3 {
   font-size: 12px;
   font-weight: 700;
   color: $headingColor;
-}
-p{
-  font-size: 14px;
-  font-weight: 400;
-  color: $mainColor;
-}
-.container{
-  width: 1062px;
-  height: 540px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border: 3px solid blue;
-}
-.colorList{
-  list-style-type: none;
 }
