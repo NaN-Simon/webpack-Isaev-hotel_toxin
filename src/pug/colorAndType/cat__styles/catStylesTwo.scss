@@ -1,29 +1,51 @@
 $headingColor: rgba(31, 32, 65, 1);
 $mainColor: rgba(31, 32, 65, 0.75);
 $lightColor: rgba(31, 32, 65, 0.25);
-$mainFont: Montserrat;
+$mainFont: Montserrat, sans-serif;
 
-.headingGroup {
-  border: 0px solid black;
+.headingGroup{
   font-family: $mainFont;
   width: 436px;
   height: 321px;
 }
-
-h1 {
+.lightOp{
+  display: block;
+  opacity: 0.2;
+}
+.block{
+  display:flex;
+  justify-content: right;
+}
+.block_r{
+  width: 369px;
+  margin: 0px 0px 0px 27px;
+}
+.l1{
+  font-style: normal;
+  font-weight: bold;
   font-size: 24px;
-  font-weight: 700;
-  color: $headingColor;
+  line-height: 29px;
+  margin: 0 0 40px 0;
 }
-
-h2 {
+.l2{
+  font-style: normal;
+  font-weight: bold;
   font-size: 19px;
-  font-weight: 700;
-  color: $headingColor;
+  line-height: 23px;
+  margin: 0 0 70px 0;
 }
-
-h3 {
+.l3{
+  font-style: normal;
+  font-weight: bold;
   font-size: 12px;
-  font-weight: 700;
-  color: $headingColor;
+  line-height: 15px;
+  margin: 0 0 50px 0;
+  text-transform: uppercase;
+}
+.l4{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0 0 50px 0;
 }

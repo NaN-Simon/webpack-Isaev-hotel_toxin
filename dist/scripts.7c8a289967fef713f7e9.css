@@ -129,24 +129,28 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-family: Montserrat;
   width: 436px;
   height: 321px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-h1, .h1 {
-  font-size: 24px;
-  font-weight: 700;
-  color: #1f2041;
+.layer {
+  text-align: right;
 }
 
-h2, .h2 {
-  font-size: 19px;
-  font-weight: 700;
-  color: #1f2041;
+.lightOp {
+  opacity: 0.2;
 }
 
-h3, .h3 {
-  font-size: 12px;
-  font-weight: 700;
-  color: #1f2041;
+h1, .h1, h2, .h2, h3, .h3 {
+  margin: 15px 20px;
+}
+
+.bodyStyle {
+  margin: 0 20px;
 }
 
 @font-face {
@@ -12730,4 +12734,4 @@ textarea.form-control-lg {
   }
 }
 
-/*# sourceMappingURL=scripts.7bb18ff7854bee38eb4d.css.map*/
+/*# sourceMappingURL=scripts.7c8a289967fef713f7e9.css.map*/
