@@ -4,14 +4,16 @@ $lightColor: rgba(31, 32, 65, 0.25);
 $mainFont: Montserrat, sans-serif;
 
 .headingGroup{
-  font-family: $mainFont;
   width: 436px;
   height: 321px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.lightOp{
-  display: block;
-  opacity: 0.2;
-}
+.op75{opacity: 0.75;}
+.op50{opacity: 0.5;}
+.op25{opacity: 0.25;}
+
 .block{
   display:flex;
   justify-content: right;
@@ -20,32 +22,32 @@ $mainFont: Montserrat, sans-serif;
   width: 369px;
   margin: 0px 0px 0px 27px;
 }
-.l1{
+.tit1{
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
   line-height: 29px;
-  margin: 0 0 40px 0;
+  //margin: 0 0 40px 0;
 }
-.l2{
+.tit2{
   font-style: normal;
   font-weight: bold;
   font-size: 19px;
   line-height: 23px;
-  margin: 0 0 70px 0;
+  //margin: 0 0 70px 0;
 }
-.l3{
+.tit3{
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
-  margin: 0 0 50px 0;
+  //margin: 0 0 50px 0;
   text-transform: uppercase;
 }
-.l4{
+.tit4{
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
-  margin: 0 0 50px 0;
+  //margin: 0 0 50px 0;
 }

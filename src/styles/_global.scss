@@ -1,5 +1,7 @@
+$mainFont: Montserrat, sans-serif;
 body {
   box-sizing: border-box;
+  font-family: $mainFont;
 }
 
 *, *:after, *:before {
@@ -16,4 +18,8 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0px;
   justify-content: space-between;
   border: 0px dashed #00c3ff;
+}
+.fe-container{
+  display: flex;
+  flex-direction: column;
 }

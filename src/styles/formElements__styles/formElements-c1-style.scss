@@ -1,3 +1,42 @@
+$headingColor: rgba(31, 32, 65, 1);
+$mainColor: rgba(31, 32, 65, 0.75);
+$lightColor: rgba(31, 32, 65, 0.25);
+
 .fe-columnOne {
-  color: red;
+}
+
+.fe-container{
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.default{
+  display: block;
+  width: 320px;
+}
+.default_sub{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+.input-1,
+.input-2{
+  width: 316px;
+  height: 44px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  padding: 0 15px;
+}
+::placeholder{
+  opacity: 0.4;
+}
+//.input-1:focus{
+//  opacity:1;
+//}
+
+
+.input-2:hover,
+.input-2:focus{
+  color: $mainColor;
+  opacity: 0.75;
 }
