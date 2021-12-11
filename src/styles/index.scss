@@ -1,4 +1,8 @@
 @use "global";
-@use "../pug/colorAndType/cat__styles/catStylesOne";
-@use "../pug/colorAndType/cat__styles/catStylesTwo";
+@use "colorsAndType__styles/catStyles__colors";
+@use "colorsAndType__styles/catStyles__style";
 @use "fonts";
+//Form Elements
+@use "formElements__styles/formElements-c1-style";
+@use "formElements__styles/formElements-c2-style";
+@use "formElements__styles/formElements-c3-style";
