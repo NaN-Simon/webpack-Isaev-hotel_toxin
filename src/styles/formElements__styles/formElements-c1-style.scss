@@ -1,42 +1,131 @@
 $headingColor: rgba(31, 32, 65, 1);
 $mainColor: rgba(31, 32, 65, 0.75);
 $lightColor: rgba(31, 32, 65, 0.25);
-
+$heightBlock: 44px;
 .fe-columnOne {
 }
 
-.fe-container{
+.fe-container {
   display: flex;
   justify-content: center;
   margin: 20px;
 }
-.default{
+
+.default {
   display: block;
   width: 320px;
+  margin: 15px 0;
 }
-.default_sub{
-  display:flex;
+
+.default_sub {
+  display: flex;
   justify-content: space-between;
   align-items: center;
   text-transform: uppercase;
+  height: 20.44px;
 }
+
 .input-1,
-.input-2{
-  width: 316px;
+.input-2 {
+  width: 320px;
   height: 44px;
-  border: 1px solid rgba(31, 32, 65, 0.25);
+  border: 1px solid $lightColor;
+  border-radius: 4px;
   padding: 0 15px;
 }
-::placeholder{
+
+::placeholder {
   opacity: 0.4;
 }
-//.input-1:focus{
-//  opacity:1;
-//}
-
 
 .input-2:hover,
-.input-2:focus{
+.input-2:focus {
   color: $mainColor;
   opacity: 0.75;
 }
+
+//Third input
+
+.dropdown {
+  position: relative;
+}
+.dropdown li{
+  list-style: none;
+}
+//общий вид первой строки
+.menu__list {
+  display: flex;
+  align-items: center;
+  min-width: 100%;
+  border: 1px solid black;
+  height: $heightBlock;
+  background: #FFFFFF;
+  border: 1px solid $lightColor;
+  border-radius: 4px;
+  padding: 0 15px;
+}
+
+//первая строка
+.menu__link {
+}
+
+//общий вид дропа
+.sub-menu__list {
+  display: none;
+  min-width: 100%;
+  position: absolute;
+  left: 0px;
+  top: $heightBlock;
+  border: 1px solid $lightColor;
+  border-radius: 4px;
+}
+
+//элементы дропа
+.sub-menu__link {
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  height: $heightBlock;
+  border-bottom: 1px solid $lightColor;
+}
+
+//пока хз
+.menu__arrow {
+}
+
+//треугольник
+.arrow {
+  //display: none;
+  position: absolute;
+  right: 24px;
+  top: 18px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid #000;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+}
+//активация
+.sub-menu__list.open{
+  display:block}
+
+
+
+
+
+
+
+
+
+
+
+
+.dropdown,
+.menu__list,
+.menu__link,
+.sub-menu__list,
+.sub-menu__link,
+.sub-sub-menu__list,
+.sub-sub-menu__link{
+}
+
