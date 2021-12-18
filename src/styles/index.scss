@@ -1,8 +1,8 @@
 @use "global";
-@use "colorsAndType__styles/catStyles__colors";
-@use "colorsAndType__styles/catStyles__style";
+@use "../colorsAndType/cat__colors.scss";
+@use "../colorsAndType/cat__style.scss";
 @use "fonts";
 //Form Elements
-@use "formElements__styles/formElements-c1-style";
-@use "formElements__styles/formElements-c2-style";
-@use "formElements__styles/formElements-c3-style";
+@use "../formElements/FE__column1.scss";
+@use "../formElements/FE__column2.scss";
+@use "../formElements/FE__column3.scss";

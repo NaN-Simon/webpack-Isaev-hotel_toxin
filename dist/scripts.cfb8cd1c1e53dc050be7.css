@@ -236,6 +236,7 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-align: center;
           align-items: center;
   text-transform: uppercase;
+  height: 20.44px;
 }
 
 .input-1,
@@ -295,6 +296,7 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 4px;
   padding: 0 15px;
+  background-color: white;
 }
 
 .sub-menu__list {
@@ -305,6 +307,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 44px;
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 4px;
+  background-color: white;
 }
 
 .sub-menu__link {
@@ -334,4 +337,4 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
 }
 
-/*# sourceMappingURL=scripts.75581f54d32c54419f1c.css.map*/
+/*# sourceMappingURL=scripts.cfb8cd1c1e53dc050be7.css.map*/

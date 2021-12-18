@@ -30,33 +30,20 @@ var _loop = function _loop(i) {
 
 for (var i = 0; i < arrow.length; i++) {
   _loop(i);
-} // let dropLink = document.querySelectorAll('sub-menu__link')
-// for(let i=0;i<dropLink.length;i++){
-//   let firstGuest = dropLink[i];
-//   let secondGuest = dropLink[i].nextElementSibling;
-//   dropLink[i].addEventListener('click',function () {
-//     firstGuest.classList.add('firstGuest')
-//     console.log('asd')
-//     secondGuest.classList.add('secondGuest')
-//     console.log('asd2')
-//   })
-// }
-
+}
 
 var listElem = document.querySelector('.menu__link');
 var detectedList = listElem.textContent;
-console.log(detectedList); //let mainElement = document.querySelector('.menu__link');
-//let selectedElem = mainElement.textContent;
-
+console.log(detectedList);
+var mainElement = document.querySelector('.menu__link');
+var selectedElem = mainElement.textContent;
 var subLinkElem = document.querySelectorAll('.sub-menu__link');
 
 var _loop2 = function _loop2(_i) {
   var selectedGuest = subLinkElem[_i].textContent;
 
   subLinkElem[_i].addEventListener('click', function () {
-    console.log(selectedGuest); //console.log(selectedElem)
-
-    document.querySelector('menu__link').innerHTML = 'selectedGuest';
+    document.querySelector('.menu__link').innerHTML = selectedGuest;
   });
 };
 
@@ -259,4 +246,4 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=scripts.49b0a55f2d3fdc26c29a.js.map
+//# sourceMappingURL=scripts.b5a6adf9e4ed9919b271.js.map

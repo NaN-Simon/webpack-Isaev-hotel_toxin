@@ -18,7 +18,6 @@ let listElem = document.querySelector('.menu__link');
 let detectedList = listElem.textContent;
 console.log(detectedList)
 
-
 let mainElement = document.querySelector('.menu__link');
 let selectedElem = mainElement.textContent;
 let subLinkElem = document.querySelectorAll('.sub-menu__link');
@@ -28,5 +27,5 @@ for(let i=0;i<subLinkElem.length;i++){
   subLinkElem[i].addEventListener('click',function () {
     document.querySelector('.menu__link').innerHTML = selectedGuest;
   })
-
 }
+
