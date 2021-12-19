@@ -2,8 +2,7 @@ $headingColor: rgba(31, 32, 65, 1);
 $mainColor: rgba(31, 32, 65, 0.75);
 $lightColor: rgba(31, 32, 65, 0.25);
 $heightBlock: 44px;
-.fe-columnOne {
-}
+
 
 .fe-container {
   display: flex;
@@ -66,10 +65,6 @@ $heightBlock: 44px;
   background-color: white;;
 }
 
-//первая строка
-.menu__link {
-}
-
 //общий вид дропа
 .sub-menu__list {
   display: none;
@@ -91,10 +86,6 @@ $heightBlock: 44px;
   border-bottom: 1px solid $lightColor;
 }
 
-//пока хз
-.menu__arrow {
-}
-
 //треугольник
 .arrow {
   //display: none;
@@ -111,15 +102,14 @@ $heightBlock: 44px;
 .sub-menu__list.open{
   display:block}
 
-
-
-
-
-
-
-
-
-
+.date, .email {
+  width: 320px;
+  height: 44px;
+  border-style: solid;
+  border-color: rgb(211, 211, 211);
+  border-radius: 5px;
+  padding: 0 10px;
+}
 
 
 .dropdown,

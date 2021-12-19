@@ -20,5 +20,9 @@
           ul.sub-menu__list.tit4.op75
             li.sub-menu__link Один гость
             li.sub-menu__link Два гостя
-    .default 
-      input(type="text")
+    .default
+      form.dateBlock(action='/people')
+        label.cub
+          div Введите дату:
+          input.date(type='text' name='date' placeholder='ДД.ММ.ГГГГ')
+    

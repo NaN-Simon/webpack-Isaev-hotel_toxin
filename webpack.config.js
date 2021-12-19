@@ -1,3 +1,4 @@
+const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 let mode ='development'
@@ -30,7 +31,13 @@ module.exports = {
         ),
         new HtmlWebpackPlugin({
         template: "./src/index.pug"
-    })],
+    }),
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery',
+            'window.jQuery': 'jquery'
+        })
+    ],
     module: {
         rules: [
             {
