@@ -108,14 +108,13 @@ $heightBlock: 44px;
   border-style: solid;
   border-color: rgb(211, 211, 211);
   border-radius: 5px;
-  padding: 0 10px;
+  padding: 0 15px;
 }
 
 .dateDropGroup {
   width: 320px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 40px;
 }
 
 .dateDropMenu {
@@ -189,3 +188,41 @@ $heightBlock: 44px;
   top: 0px;
 }
 /* <- CustomArrow  */
+
+/* Date Filter */
+.menuDateFilter {
+  position: relative;
+  width: 320px;
+}
+.menuDateFilter__link {
+  height: 44px;
+  color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  width: 280px;
+}
+.sub-menuDateFilter__list {
+  display: none;
+  width: 320px;
+  min-height: 44px;
+  position: absolute;
+  left: 0px;
+  top: 45px;
+  border: 2px solid rgb(203 203 203);
+  background-color: white;
+  border-radius: 3px;
+}
+.sub-menuDateFilter__list.open {
+  display: block;
+}
+.menuDateFilter__link2 {
+  margin: 0 3px;
+}
+
+.customArrowSub{
+  position: absolute;
+  top: 19px;
+  right: 0px;
+  width: 44px;
+  height: 44px;
+}

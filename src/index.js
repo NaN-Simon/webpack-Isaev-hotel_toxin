@@ -39,3 +39,12 @@ for(let i=0;i<DateDropArrow.length;i++){
 		thisArrow.classList.toggle("active")
 		})
 	}
+
+  /* Subscription */
+let customArrowSub = document.querySelectorAll('.customArrowSub')
+for (let arrow of customArrowSub) {
+	arrow.addEventListener('click',function(){
+		let email = document.querySelector('.email').value
+		console.log('sending to server: ' + email)
+	})
+}
