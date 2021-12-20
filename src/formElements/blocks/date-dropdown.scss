@@ -1,0 +1,75 @@
+.date-dropdown-group {
+  width: 320px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.date-dropdown-menu {
+  position: relative;
+  width: 150px;
+}
+
+.date-dropdown-list {
+  display: flex;
+  border: 2px solid rgb(203 203 203);
+  border-radius: 5px;
+  cursor: default;
+}
+
+.date-dropdown__link {
+  height: 44px;
+  color: rgb(141, 141, 141);
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  width: 103px;
+}
+
+.sub-date-dropdown-list {
+  display: none;
+  width: 150px;
+  min-height: 44px;
+  position: absolute;
+  left: 0px;
+  top: 45px;
+  border: 2px solid rgb(203 203 203);
+  background-color: white;
+  border-radius: 3px;
+}
+.sub-date-dropdown__link {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  padding: 5px;
+}
+.sub-date-dropdown-list.open {
+  display: block;
+}
+
+.arrow-custom {
+  display: block;
+  width: 44px;
+  height: 44px;
+}
+.arrow-custom-wrap {
+  position: relative;
+  margin-top: 21px;
+  margin-left: 18px;
+}
+.check-sign {
+  position: absolute;
+  background: rgb(141, 141, 141);
+}
+
+.check-part-1 {
+  width: 8px;
+  height: 2px;
+  transform: rotate(45deg);
+}
+.check-part-2 {
+  width: 8px;
+  height: 2px;
+  transform: rotate(-45deg);
+  left: 4.5px;
+  top: 0px;
+}

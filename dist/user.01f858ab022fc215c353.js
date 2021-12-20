@@ -2,66 +2,23 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/index.js":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
+/***/ "./src/user.js":
+/*!*********************!*\
+  !*** ./src/user.js ***!
+  \*********************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _styles_index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/index.scss */ "./src/styles/index.scss");
+/* harmony import */ var jquery_mask_plugin__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery-mask-plugin */ "./node_modules/jquery-mask-plugin/dist/jquery.mask.js");
+/* harmony import */ var jquery_mask_plugin__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery_mask_plugin__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_1__);
 
- // Dropdown
 
-var arrow = document.querySelectorAll(".arrow");
-
-var _loop = function _loop(i) {
-  var thisLink = arrow[i].previousElementSibling;
-  var subMenu = arrow[i].nextElementSibling;
-  var thisArrow = arrow[i];
-  thisLink.classList.add("parent");
-  arrow[i].addEventListener("click", function () {
-    subMenu.classList.toggle("open");
-    thisArrow.classList.toggle("active");
-  });
-};
-
-for (var i = 0; i < arrow.length; i++) {
-  _loop(i);
-}
-
-var listElem = document.querySelector('.menu__link');
-var detectedList = listElem.textContent;
-console.log(detectedList);
-var mainElement = document.querySelector('.menu__link');
-var selectedElem = mainElement.textContent;
-var subLinkElem = document.querySelectorAll('.sub-menu__link');
-
-var _loop2 = function _loop2(_i) {
-  var selectedGuest = subLinkElem[_i].textContent;
-
-  subLinkElem[_i].addEventListener('click', function () {
-    document.querySelector('.menu__link').innerHTML = selectedGuest;
-  });
-};
-
-for (var _i = 0; _i < subLinkElem.length; _i++) {
-  _loop2(_i);
-}
-
-/***/ }),
-
-/***/ "./src/styles/index.scss":
-/*!*******************************!*\
-  !*** ./src/styles/index.scss ***!
-  \*******************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
+jquery__WEBPACK_IMPORTED_MODULE_1___default()('.user').html('User is working');
+jquery__WEBPACK_IMPORTED_MODULE_1___default()(function () {
+  jquery__WEBPACK_IMPORTED_MODULE_1___default()('.date').mask("00.00.0000");
+});
 
 /***/ })
 
@@ -189,7 +146,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			"scripts": 0
+/******/ 			"user": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -241,9 +198,9 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendors-node_modules_jquery_dist_jquery_js"], function() { return __webpack_require__("./src/index.js"); })
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendors-node_modules_jquery-mask-plugin_dist_jquery_mask_js"], function() { return __webpack_require__("./src/user.js"); })
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=scripts.b5a6adf9e4ed9919b271.js.map
+//# sourceMappingURL=user.01f858ab022fc215c353.js.map

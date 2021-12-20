@@ -1,0 +1,20 @@
+$mainColor: rgba(31, 32, 65, 0.75);
+$lightColor: rgba(31, 32, 65, 0.25);
+
+.input-hover-focus {
+  width: 320px;
+  height: 44px;
+  border: 1px solid $lightColor;
+  border-radius: 4px;
+  padding: 0 15px;
+}
+
+::placeholder {
+  opacity: 0.4;
+}
+
+.input-hover-focus:hover,
+.input-hover-focus:focus {
+  color: $mainColor;
+  opacity: 0.75;
+}
