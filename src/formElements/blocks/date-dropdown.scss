@@ -1,3 +1,8 @@
+$main-border: 1px solid rgba(31, 32, 65, 0.25);
+
+.date-dropdown{
+  z-index: 1;
+}
 .date-dropdown-group {
   width: 320px;
   display: flex;
@@ -11,7 +16,7 @@
 
 .date-dropdown-list {
   display: flex;
-  border: 2px solid rgb(203 203 203);
+  border: $main-border;
   border-radius: 5px;
   cursor: default;
 }
@@ -21,7 +26,7 @@
   color: rgb(141, 141, 141);
   display: flex;
   align-items: center;
-  padding: 0 10px;
+  padding: 0 15px;
   width: 103px;
 }
 
@@ -32,18 +37,19 @@
   position: absolute;
   left: 0px;
   top: 45px;
-  border: 2px solid rgb(203 203 203);
+  border: $main-border;
   background-color: white;
   border-radius: 3px;
+  align-items: center;
 }
 .sub-date-dropdown__link {
   display: flex;
   align-items: center;
-  height: 60px;
+  height: 44px;
   padding: 5px;
 }
 .sub-date-dropdown-list.open {
-  display: block;
+  display: flex;
 }
 
 .arrow-custom {

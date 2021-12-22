@@ -24,6 +24,102 @@ for (var i = 0; i < arrowCustom.length; i++) {
 
 /***/ }),
 
+/***/ "./src/formElements/blocks/dropdown-expanded.js":
+/*!******************************************************!*\
+  !*** ./src/formElements/blocks/dropdown-expanded.js ***!
+  \******************************************************/
+/***/ (function() {
+
+// Dropdown-buttons
+var bedroomCounterMinus = document.querySelector(".bedroom.counter-minus");
+var bedroomCounterPlus = document.querySelector(".bedroom.counter-plus");
+var bedroomCounterEquals = document.querySelector(".bedroom.counter-equals");
+var bedCounterMinus = document.querySelector(".bed.counter-minus");
+var bedCounterPlus = document.querySelector(".bed.counter-plus");
+var bathroomCounterMinus = document.querySelector(".bathroom.counter-minus");
+var bathroomCounterPlus = document.querySelector(".bathroom.counter-plus");
+var counterEqualsRoom = 1;
+var counterEqualsBed = 1;
+var counterEqualsBathroom = 1;
+
+function letsEvent(param, symvol) {
+  if (param == "bedroom") {
+    if (symvol == "plus" && counterEqualsRoom != 99) {
+      counterEqualsRoom++;
+      document.querySelector(".".concat(param, ".counter-equals")).innerHTML = counterEqualsRoom;
+    } else if (symvol == "minus" && counterEqualsRoom != 1) {
+      counterEqualsRoom--;
+      document.querySelector(".".concat(param, ".counter-equals")).innerHTML = counterEqualsRoom;
+
+      if (counterEqualsRoom == 1) {
+        console.log("тут будет значение 1 спальня");
+      }
+
+      ;
+      showParam();
+    }
+  } else if (param == "bed") {
+    if (symvol == "plus" && counterEqualsBed != 99) {
+      counterEqualsBed++;
+      document.querySelector(".".concat(param, ".counter-equals")).innerHTML = counterEqualsBed;
+    } else if (symvol == "minus" && counterEqualsBed != 1) {
+      counterEqualsBed--;
+      document.querySelector(".".concat(param, ".counter-equals")).innerHTML = counterEqualsBed;
+    }
+  } else if (param == "bathroom") {
+    if (symvol == "plus" && counterEqualsBathroom != 99) {
+      counterEqualsBathroom++;
+      document.querySelector(".".concat(param, ".counter-equals")).innerHTML = counterEqualsBathroom;
+    } else if (symvol == "minus" && counterEqualsBathroom != 1) {
+      counterEqualsBathroom--;
+      document.querySelector(".".concat(param, ".counter-equals")).innerHTML = counterEqualsBathroom;
+    }
+  }
+}
+
+bedroomCounterPlus.addEventListener("click", function () {
+  letsEvent("bedroom", "plus");
+  showParam();
+});
+bedroomCounterMinus.addEventListener("click", function () {
+  letsEvent("bedroom", "minus");
+  showParam();
+});
+bedCounterPlus.addEventListener("click", function () {
+  letsEvent("bed", "plus");
+  showParam();
+});
+bedCounterMinus.addEventListener("click", function () {
+  letsEvent("bed", "minus");
+  showParam();
+});
+bathroomCounterPlus.addEventListener("click", function () {
+  letsEvent("bathroom", "plus");
+});
+bathroomCounterMinus.addEventListener("click", function () {
+  letsEvent("bathroom", "minus");
+}); // DropdownLink
+
+var dropdownLink = document.querySelector(".dropdown-expanded__link");
+var globalResult = "";
+var resultRoom = "";
+var resultBed = "";
+
+function showParam() {
+  if (counterEqualsRoom >= 0) {
+    resultRoom = counterEqualsRoom + " cпальни, ";
+  }
+
+  if (counterEqualsBed >= 0) {
+    resultBed = counterEqualsBed + " кровати... ";
+  }
+
+  globalResult = resultRoom + resultBed;
+  dropdownLink.innerHTML = globalResult;
+}
+
+/***/ }),
+
 /***/ "./src/formElements/blocks/dropdown.js":
 /*!*********************************************!*\
   !*** ./src/formElements/blocks/dropdown.js ***!
@@ -196,6 +292,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _formElements_blocks_date_dropdown__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_formElements_blocks_date_dropdown__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _formElements_blocks_input_subscription__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./formElements/blocks/input-subscription */ "./src/formElements/blocks/input-subscription.js");
 /* harmony import */ var _formElements_blocks_input_subscription__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_formElements_blocks_input_subscription__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _formElements_blocks_dropdown_expanded__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./formElements/blocks/dropdown-expanded */ "./src/formElements/blocks/dropdown-expanded.js");
+/* harmony import */ var _formElements_blocks_dropdown_expanded__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_formElements_blocks_dropdown_expanded__WEBPACK_IMPORTED_MODULE_4__);
+
 
 
 
@@ -203,4 +302,4 @@ __webpack_require__.r(__webpack_exports__);
 }();
 /******/ })()
 ;
-//# sourceMappingURL=scripts.8120503a3c4731bd72c1.js.map
+//# sourceMappingURL=scripts.f8a1ec924dda0b99b820.js.map

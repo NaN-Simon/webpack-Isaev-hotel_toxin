@@ -1,16 +1,18 @@
 $lightColor: rgba(31, 32, 65, 0.25);
 $heightBlock: 44px;
+$main-border: 1px solid rgba(31, 32, 65, 0.25);
 
 .filter-dropdown {
   position: relative;
   width: 320px;
+  z-index: 1;
 }
 
 .filter-dropdown-list {
   display: flex;
   align-items: center;
   min-width: 100%;
-  border: 1px solid black;
+  border: $main-border;
   height: $heightBlock;
   background: #FFFFFF;
   border: 1px solid $lightColor;
@@ -39,8 +41,8 @@ $heightBlock: 44px;
   min-height: 44px;
   position: absolute;
   left: 0px;
-  top: 45px;
-  border: 2px solid rgb(203 203 203);
+  top: 43px;
+  border: $main-border;
   background-color: white;
   border-radius: 3px;
 }
