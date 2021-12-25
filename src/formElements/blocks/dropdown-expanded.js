@@ -1,88 +1,93 @@
+let dropdownExpendArrow = document.querySelector(".dropdown-expend-arrow");
+let dropdownExpendAddOpen = dropdownExpendArrow.nextElementSibling;
+dropdownExpendArrow.addEventListener("click", function () {
+  dropdownExpendAddOpen.classList.toggle("open");
+});
+
 
 // Dropdown-buttons
 
+// // Bedroom
 let bedroomCounterMinus = document.querySelector(".bedroom.counter-minus");
 let bedroomCounterPlus = document.querySelector(".bedroom.counter-plus");
-let bedroomCounterEquals = document.querySelector(".bedroom.counter-equals");
-let bedCounterMinus = document.querySelector(".bed.counter-minus");
-let bedCounterPlus = document.querySelector(".bed.counter-plus");
-let bathroomCounterMinus = document.querySelector(".bathroom.counter-minus");
-let bathroomCounterPlus = document.querySelector(".bathroom.counter-plus");
+let bedroomCounterEquals = 1;
+let lineBedroom = document.querySelector(".dropdown__link-line1");
 
-let counterEqualsRoom = 1;
-let counterEqualsBed = 1;
-let counterEqualsBathroom = 1;
-
-function letsEvent(param, symvol) {
-  if (param == "bedroom") {
-    if (symvol == "plus" && counterEqualsRoom != 99) {
-      counterEqualsRoom++;
-      document.querySelector(`.${param}.counter-equals`).innerHTML = counterEqualsRoom;
-    } else if (symvol == "minus" && counterEqualsRoom != 1) {
-      counterEqualsRoom--;
-      document.querySelector(`.${param}.counter-equals`).innerHTML = counterEqualsRoom;
-			if (counterEqualsRoom == 1) {console.log("тут будет значение 1 спальня")};
-			showParam()
-    }
-  } else if (param == "bed") {
-    if (symvol == "plus" && counterEqualsBed != 99) {
-      counterEqualsBed++;
-      document.querySelector(`.${param}.counter-equals`).innerHTML = counterEqualsBed;
-    } else if (symvol == "minus" && counterEqualsBed != 1) {
-      counterEqualsBed--;
-      document.querySelector(`.${param}.counter-equals`).innerHTML =
-        counterEqualsBed;
-    }
-  } else if (param == "bathroom") {
-    if (symvol == "plus" && counterEqualsBathroom != 99) {
-      counterEqualsBathroom++;
-      document.querySelector(`.${param}.counter-equals`).innerHTML =
-        counterEqualsBathroom;
-    } else if (symvol == "minus" && counterEqualsBathroom != 1) {
-      counterEqualsBathroom--;
-      document.querySelector(`.${param}.counter-equals`).innerHTML =
-        counterEqualsBathroom;
-    }
+bedroomCounterPlus.addEventListener("click", function () {
+  toggleBedroom("plus");
+  if (bedroomCounterEquals > 1) {
+    lineBedroom.innerHTML = bedroomCounterEquals + " cпальни";
+    bedroomCounterMinus.classList.remove("op50");
   }
+});
+bedroomCounterMinus.addEventListener("click", function () {
+  toggleBedroom();
+  if (bedroomCounterEquals == 1) {
+    lineBedroom.innerHTML = bedroomCounterEquals + " cпальня";
+    bedroomCounterMinus.classList.add("op50");
+  }
+});
+
+function toggleBedroom(sign) {
+  if (sign == "plus" && bedroomCounterEquals < 10) {
+    bedroomCounterEquals++;
+  } else if (bedroomCounterEquals > 1) {
+    bedroomCounterEquals--;
+  }
+  document.querySelector(`.bedroom.counter-equals`).innerHTML =
+    bedroomCounterEquals;
 }
 
-bedroomCounterPlus.addEventListener("click",function() {
-	letsEvent("bedroom","plus");
-	showParam();
-})
-bedroomCounterMinus.addEventListener("click", function () {
-  letsEvent("bedroom", "minus");
-	showParam();
-});
+// // Bed
+let bedCounterMinus = document.querySelector(".bed.counter-minus");
+let bedCounterPlus = document.querySelector(".bed.counter-plus");
+let bedCounterEquals = 1;
+let lineBed = document.querySelector(".dropdown__link-line2");
 bedCounterPlus.addEventListener("click", function () {
-  letsEvent("bed", "plus");
-	showParam();
+  toggleBed("plus");
+  if (bedCounterEquals > 1) {
+    lineBed.innerHTML = bedCounterEquals + " кровати";
+    bedCounterMinus.classList.remove("op50");
+  }
 });
 bedCounterMinus.addEventListener("click", function () {
-  letsEvent("bed", "minus");
-	showParam();
+  toggleBed();
+  if (bedCounterEquals == 1) {
+    lineBed.innerHTML = bedCounterEquals + " кровати";
+    bedCounterMinus.classList.add("op50");
+  }
 });
+
+function toggleBed(sign) {
+  if (sign == "plus" && bedCounterEquals < 10) {
+    bedCounterEquals++;
+  } else if (bedCounterEquals > 1) {
+    bedCounterEquals--;
+  }
+  document.querySelector(`.bed.counter-equals`).innerHTML = bedCounterEquals;
+}
+
+// // Bathroom
+let bathroomCounterMinus = document.querySelector(".bathroom.counter-minus");
+let bathroomCounterPlus = document.querySelector(".bathroom.counter-plus");
+let bathroomCounterEquals = 0;
 bathroomCounterPlus.addEventListener("click", function () {
-  letsEvent("bathroom", "plus");
+  toggleBathroom("plus");
+  bathroomCounterMinus.classList.remove("op50");
 });
 bathroomCounterMinus.addEventListener("click", function () {
-  letsEvent("bathroom", "minus");
+  toggleBathroom();
+  if (bathroomCounterEquals == 0) {
+    bathroomCounterMinus.classList.add("op50");
+  }
 });
 
-// DropdownLink
-
-let dropdownLink = document.querySelector(".dropdown-expanded__link");
-let globalResult = "";
-let resultRoom = "";
-let resultBed = "";
-
-function showParam() {
-  if (counterEqualsRoom >= 0) {
-    resultRoom = counterEqualsRoom + " cпальни, ";
+function toggleBathroom(sign) {
+  if (sign == "plus" && bathroomCounterEquals < 10) {
+    bathroomCounterEquals++;
+  } else if (bathroomCounterEquals > 0) {
+    bathroomCounterEquals--;
   }
-  if (counterEqualsBed >= 0) {
-    resultBed = counterEqualsBed + " кровати... ";
-  }
-	globalResult = resultRoom+resultBed;
-  dropdownLink.innerHTML = globalResult;
+  document.querySelector(`.bathroom.counter-equals`).innerHTML =
+    bathroomCounterEquals;
 }
