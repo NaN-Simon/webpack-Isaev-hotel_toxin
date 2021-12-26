@@ -1,5 +1,5 @@
-const dropdownExpendArrow = document.querySelector(".dropdown-expend-arrow");
-const dropdownExpendAddOpen = dropdownExpendArrow.nextElementSibling;
+let dropdownExpendArrow = document.querySelector(".dropdown-expend-arrow");
+let dropdownExpendAddOpen = dropdownExpendArrow.nextElementSibling;
 dropdownExpendArrow.addEventListener("click", function () {
   dropdownExpendAddOpen.classList.toggle("open");
 });
@@ -22,7 +22,7 @@ bedroomCounterPlus.addEventListener("click", function () {
 });
 bedroomCounterMinus.addEventListener("click", function () {
   toggleBedroom();
-  if (bedroomCounterEquals >= 1) {
+  if (bedroomCounterEquals <= 1) {
     lineBedroom.innerHTML = bedroomCounterEquals + " cпальня";
     bedroomCounterMinus.classList.add("op50");
   }
@@ -52,7 +52,7 @@ bedCounterPlus.addEventListener("click", function () {
 });
 bedCounterMinus.addEventListener("click", function () {
   toggleBed();
-  if (bedCounterEquals >= 1) {
+  if (bedCounterEquals <= 1) {
     lineBed.innerHTML = bedCounterEquals + " кровати";
     bedCounterMinus.classList.add("op50");
   }
