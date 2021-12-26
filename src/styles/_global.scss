@@ -5,13 +5,20 @@ body {
   font-family: $mainFont;
 }
 
-*, *:after, *:before {
+*,
+*:after,
+*:before {
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 
@@ -22,7 +29,10 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: space-between;
   border: 0px dashed #00c3ff;
 }
-.fe-container{
+.fe-container {
   display: flex;
   flex-direction: column;
+}
+.form-element-block {
+  display: flex;
 }
