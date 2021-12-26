@@ -1,4 +1,4 @@
-let dropdownExpendArrow = document.querySelector(".dropdown-expend-arrow");
+let dropdownExpendArrow = document.querySelector(".expand-arrow");
 let dropdownExpendAddOpen = dropdownExpendArrow.nextElementSibling;
 dropdownExpendArrow.addEventListener("click", function () {
   dropdownExpendAddOpen.classList.toggle("open");
@@ -8,8 +8,8 @@ dropdownExpendArrow.addEventListener("click", function () {
 // Dropdown-buttons
 
 // // Bedroom
-let bedroomCounterMinus = document.querySelector(".bedroom.counter-minus");
-let bedroomCounterPlus = document.querySelector(".bedroom.counter-plus");
+const bedroomCounterMinus = document.querySelector(".bedroom.counter-minus");
+const bedroomCounterPlus = document.querySelector(".bedroom.counter-plus");
 let bedroomCounterEquals = 2;
 let lineBedroom = document.querySelector(".dropdown__link-line1");
 
@@ -39,21 +39,21 @@ function toggleBedroom(sign) {
 }
 
 // // Bed
-let bedCounterMinus = document.querySelector(".bed.counter-minus");
-let bedCounterPlus = document.querySelector(".bed.counter-plus");
+const bedCounterMinus = document.querySelector(".bed.counter-minus");
+const bedCounterPlus = document.querySelector(".bed.counter-plus");
 let bedCounterEquals = 2;
 let lineBed = document.querySelector(".dropdown__link-line2");
 bedCounterPlus.addEventListener("click", function () {
   toggleBed("plus");
   if (bedCounterEquals > 1) {
-    lineBed.innerHTML = bedCounterEquals + " кровати";
+    lineBed.innerHTML = bedCounterEquals + " кровати..";
     bedCounterMinus.classList.remove("op50");
   }
 });
 bedCounterMinus.addEventListener("click", function () {
   toggleBed();
   if (bedCounterEquals <= 1) {
-    lineBed.innerHTML = bedCounterEquals + " кровати";
+    lineBed.innerHTML = bedCounterEquals + " кровать..";
     bedCounterMinus.classList.add("op50");
   }
 });
@@ -68,8 +68,8 @@ function toggleBed(sign) {
 }
 
 // // Bathroom
-let bathroomCounterMinus = document.querySelector(".bathroom.counter-minus");
-let bathroomCounterPlus = document.querySelector(".bathroom.counter-plus");
+const bathroomCounterMinus = document.querySelector(".bathroom.counter-minus");
+const bathroomCounterPlus = document.querySelector(".bathroom.counter-plus");
 let bathroomCounterEquals = 0;
 bathroomCounterPlus.addEventListener("click", function () {
   toggleBathroom("plus");

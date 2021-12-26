@@ -3,6 +3,8 @@
 @use "../colorsAndType/cat__style.scss";
 @use "fonts";
 //Form Elements
+@use "../formElements/icons/arrow.scss";
+@use "../formElements/icons/arrow-right.scss";
 @use "../formElements/blocks/default/default.scss";
 @use "../formElements/blocks/hover-focus/hover-focus.scss";
 @use "../formElements/blocks/dropdown/dropdown.scss";

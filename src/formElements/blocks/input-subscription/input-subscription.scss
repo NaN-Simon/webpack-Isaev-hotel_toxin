@@ -5,43 +5,5 @@ $main-border: 1px solid rgba(31, 32, 65, 0.25);
   height: 44px;
   border: $main-border;
   border-radius: 4px;
-  padding: 0 15px;
-}
-.arrow-subscription-custom-wrap {
-  position: relative;
-  margin-top: 21px;
-  margin-left: -34px;
-}
-.input-subscription-arrow-custom {
-  position: absolute;
-  top: 15px;
-  right: 0px;
-  width: 44px;
-  height: 44px;
-}
-.check-part-3 {
-  position: absolute;
-  background: rgb(111, 113, 189);
-  width: 13px;
-  height: 2px;
-  transform: rotate(45deg);
-  left: 51px;
-  top: -4px;
-}
-.check-part-4 {
-  position: absolute;
-  background: rgb(111, 113, 189);
-  width: 13px;
-  height: 2px;
-  transform: rotate(-45deg);
-  left: 51px;
-  top: 4px;
-}
-.check-part-5 {
-  position: absolute;
-  background: rgb(111, 113, 189);
-  width: 16px;
-  height: 2px;
-  left: 46px;
-  top: 0;
+  padding-left: 15px;
 }

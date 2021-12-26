@@ -52,30 +52,3 @@ $main-border: 1px solid rgba(31, 32, 65, 0.25);
   display: flex;
 }
 
-.arrow-custom {
-  display: block;
-  width: 44px;
-  height: 44px;
-}
-.arrow-custom-wrap {
-  position: relative;
-  margin-top: 21px;
-  margin-left: 18px;
-}
-.check-sign {
-  position: absolute;
-  background: rgb(141, 141, 141);
-}
-
-.check-part-1 {
-  width: 8px;
-  height: 2px;
-  transform: rotate(45deg);
-}
-.check-part-2 {
-  width: 8px;
-  height: 2px;
-  transform: rotate(-45deg);
-  left: 4.5px;
-  top: 0px;
-}
