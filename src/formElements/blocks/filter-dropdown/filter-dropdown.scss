@@ -5,11 +5,11 @@ $main-border: 1px solid rgba(31, 32, 65, 0.25);
 .filter-dropdown {
   position: relative;
   width: 266px;
-  z-index: 1;
 }
 
 .filter-dropdown-list {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   min-width: 100%;
   border: $main-border;
@@ -17,16 +17,10 @@ $main-border: 1px solid rgba(31, 32, 65, 0.25);
   background: #FFFFFF;
   border: 1px solid $lightColor;
   border-radius: 4px;
-  padding: 0 15px;
+  padding-left: 15px;
   background-color: white;;
 }
-.filter-dropdown__link {
-  height: 44px;
-  color: rgb(0, 0, 0);
-  display: flex;
-  align-items: center;
-  width: 280px;
-}
+
 .filter-dropdown__link-between {
   height: 44px;
   color: rgb(0, 0, 0);
@@ -45,6 +39,7 @@ $main-border: 1px solid rgba(31, 32, 65, 0.25);
   border: $main-border;
   background-color: white;
   border-radius: 3px;
+  z-index: 1;
 }
 .sub-filter-dropdown__link {
   display: flex;

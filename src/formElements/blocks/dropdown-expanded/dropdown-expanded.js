@@ -1,5 +1,5 @@
-let dropdownExpendArrow = document.querySelector(".dropdown-expend-arrow");
-let dropdownExpendAddOpen = dropdownExpendArrow.nextElementSibling;
+const dropdownExpendArrow = document.querySelector(".dropdown-expend-arrow");
+const dropdownExpendAddOpen = dropdownExpendArrow.nextElementSibling;
 dropdownExpendArrow.addEventListener("click", function () {
   dropdownExpendAddOpen.classList.toggle("open");
 });
