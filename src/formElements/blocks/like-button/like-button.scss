@@ -1,0 +1,75 @@
+.checkbox-toggle-group {
+  display: flex;
+}
+.checkbox-toggle {
+  display: block;
+  position: relative;
+}
+.custom-like-botton {
+  display: inline-block;
+  width: 52px;
+  height: 22px;
+  margin-right: 5px;
+  vertical-align: top;
+  border: 1.5px solid #8a8a8a;
+  border-radius: 30px;
+  outline: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  transition: 0.3s;
+}
+.custom-like-botton:checked {
+  position: relative;
+  display: inline-block;
+  width: 52px;
+  height: 22px;
+  margin-right: 5px;
+  vertical-align: top;
+  border: 1.5px solid #00a3e6;
+  border-radius: 30px;
+  outline: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  transition: 0.3s;
+}
+.custom-like-botton::after {
+  content: "";
+  display: inline-block;
+  width: 21px;
+  height: 17px;
+/*   background-image: url(disable4.jpg); */
+  background-repeat: no-repeat;
+  background-position-x: 5px;
+  background-position-y: 2px;
+  background-size: 15px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  transition: 0.3s;
+}
+.custom-like-botton:checked::after {
+  content: "";
+  display: inline-block;
+  width: 21px;
+  height: 17px;
+/*   background-image: url(able4.jpg); */
+  background-repeat: no-repeat;
+  background-position-x: 5px;
+  background-position-y: 2px;
+  background-size: 15px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  transition: 0.3s;
+}
+
+.like-botton-text {
+  position: absolute;
+  left: 27px;
+  top: 2px;
+  z-index: -1;
+  width: 20px;
+  text-align: center;
+}
