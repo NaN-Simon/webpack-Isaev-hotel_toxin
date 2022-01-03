@@ -10,21 +10,23 @@ $material-design-icons-font-directory-path: '~material-design-icons-iconfont/dis
   position: relative;
   margin: 15px 0;
 }
-.custom-like-botton {
+.custom-like-button {
+  position: relative;
   display: inline-block;
   width: 40px;
   height: 20px;
   vertical-align: top;
   border: 1px solid rgba(31, 32, 65, 0.25);
+  color: rgba(31, 32, 65, 0.25);
   border-radius: 30px;
   outline: none;
   cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  transition: 0.3s;
+  transition: 0.8s;
 }
-.custom-like-botton:checked {
+.custom-like-button:checked {
   position: relative;
   display: inline-block;
   width: 40px;
@@ -38,43 +40,45 @@ $material-design-icons-font-directory-path: '~material-design-icons-iconfont/dis
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  transition: 0.3s;
+  transition: 0.8s;
 }
-.custom-like-botton::after {
-  content: "";
+.custom-like-button::after {
+  content: "favorite_border";
   display: inline-block;
-  width: 21px;
-  height: 17px;
-  background: url("../images/heard2.jpg");
-  background-repeat: no-repeat;
-  background-position-x: 5px;
-  background-position-y: 4px;
-  background-size: 9px;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
+  font-size: 10px;
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  color: rgba(31, 32, 65, 0.25);
 }
-.custom-like-botton:checked::after {
-  content: "";
+.custom-like-button:checked::after {
+  content: "favorite";
   display: inline-block;
-  width: 21px;
-  height: 17px;
-  background: url("../images/heard1.jpg");
-  background-repeat: no-repeat;
-  background-position-x: 5px;
-  background-position-y: 4px;
-  background-size: 9px;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
+  font-size: 10px;
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  color: #bc9cff;
 }
 
-.like-botton-text {
+.like-button-text {
   position: absolute;
   left: 18px;
-  top: 4px;
+  top: 5px;
   z-index: -1;
   font-size: 10px;
   text-align: center;
   width: 10px;
+  color: rgba(31, 32, 65, 0.25);
+}
+.like-button-text-blue{
+  color: #bc9cff;
 }
