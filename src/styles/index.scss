@@ -1,24 +1,25 @@
 
 
 @use "global";
-@use "../colorsAndType/cat__colors.scss";
-@use "../colorsAndType/cat__style.scss";
+@use "../colorsAndType/block/colors-and-type-colors.scss";
+@use "../colorsAndType/block/colors-and-type-style.scss";
 @use "fonts";
 //Form Elements
 @use "../formElements/icons/arrow.scss";
 @use "../formElements/icons/arrow-right.scss";
-@use "../formElements/blocks/default/default.scss";
-@use "../formElements/blocks/hover-focus/hover-focus.scss";
-@use "../formElements/blocks/dropdown/dropdown.scss";
-@use "../formElements/blocks/input-date/input-date.scss";
-@use "../formElements/blocks/date-dropdown/date-dropdown.scss";
-@use "../formElements/blocks/filter-dropdown/filter-dropdown.scss";
-@use "../formElements/blocks/input-subscription/input-subscription.scss";
-@use "../formElements/blocks/dropdown-expanded/dropdown-expanded.scss";
-@use "../formElements/blocks/checkbox-buttons/checkbox-buttons.scss";
-@use "../formElements/blocks/checkbox-radio/checkbox-radio.scss";
-@use "../formElements/blocks/checkbox-toggle/checkbox-toggle.scss";
-@use "../formElements/blocks/like-button/like-button.scss";
+@use "../formElements/sup-block/first-column/input-default/input-default.scss";
+@use "../formElements/sup-block/first-column/input-hover-focus/input-hover-focus.scss";
+@use "../formElements/sup-block/first-column/dropdown/dropdown.scss";
+@use "../formElements/sup-block/first-column/input-date/input-date.scss";
+@use "../formElements/sup-block/first-column/dropdown-date/dropdown-date.scss";
+@use "../formElements/sup-block/first-column/dropdown-filter/dropdown-filter.scss";
+@use "../formElements/sup-block/first-column/input-subscription/input-subscription.scss";
+
+@use "../formElements/sup-block/second-column/checkbox-buttons/checkbox-buttons.scss";
+@use "../formElements/sup-block/second-column/checkbox-radio/checkbox-radio.scss";
+@use "../formElements/sup-block/second-column/checkbox-toggle/checkbox-toggle.scss";
+@use "../formElements/sup-block/second-column/button-like/button-like.scss";
 
 
 
+@use "../formElements/sub-block/dropdown-expanded/dropdown-expanded.scss";

@@ -1,7 +1,8 @@
 import './styles/index.scss';
-import './formElements/blocks/dropdown/dropdown'
-import './formElements/blocks/date-dropdown/date-dropdown'
-import './formElements/blocks/input-subscription/input-subscription'
-import './formElements/blocks/dropdown-expanded/dropdown-expanded'
-import './formElements/blocks/checkbox-buttons/checkbox-buttons'
-import './formElements/blocks/like-button/like-button'
+import './formElements/sup-block/first-column/dropdown/dropdown'
+import './formElements/sup-block/first-column/dropdown-date/dropdown-date'
+import './formElements/sup-block/first-column/input-subscription/input-subscription'
+import './formElements/sup-block/second-column/checkbox-buttons/checkbox-buttons'
+import './formElements/sup-block/second-column/button-like/button-like'
+
+import './formElements/sub-block/dropdown-expanded/dropdown-expanded'
