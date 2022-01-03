@@ -1,19 +1,24 @@
+$material-design-icons-font-directory-path: "~material-design-icons-iconfont/dist/fonts/";
+@import "~material-design-icons-iconfont/src/material-design-icons";
 
-
-.button-rate-block-size{
+.button-rate-block-size {
   height: 55px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.rate-group{
+.rate-group {
   width: 260px;
   height: 24px;
   display: flex;
   justify-content: space-between;
 }
-.button-rate-color{
-color: #8BA4F9;
-cursor: default;
-user-select: none;
+.button-rate-color {
+  color: #8ba4f9;
+  cursor: default;
+  user-select: none;
+}
+ul.button-rate-one{
+  list-style-type: none;
+  display: flex;
 }
