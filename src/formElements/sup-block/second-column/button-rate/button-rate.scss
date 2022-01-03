@@ -1,0 +1,19 @@
+
+
+.button-rate-block-size{
+  height: 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.rate-group{
+  width: 260px;
+  height: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+.button-rate-color{
+color: #8BA4F9;
+cursor: default;
+user-select: none;
+}
