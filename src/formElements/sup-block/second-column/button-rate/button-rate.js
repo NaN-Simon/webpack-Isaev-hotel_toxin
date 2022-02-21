@@ -1,25 +1,20 @@
-/* const rateOne = document.querySelectorAll(".button-rate-one");
+const leftStarsRate = document.querySelector(".left-stars-rate");
+const rightStarsRate = document.querySelector(".right-stars-rate");
+const rateStarL = document.querySelectorAll(".left-stars-rate .rate-star")
+const rateStarR = document.querySelectorAll(".right-stars-rate .rate-star")
 
-rateOne.forEach((element) => {
-  element.addEventListener("click", function (e) {
-    console.log(showElement(e));
-  });
-});
-function showElement(e) {
-  var t = e.target;
-  var checkboxes = t.parentNode.getElementsByClassName("button-rate-one");
-  var result = Array.prototype.indexOf.call(checkboxes, t);
-  return result;
-}
-let firstRate = 4;
-let buttonRateOne = document.querySelector(".button-rate-one");
-if (buttonRateOne.hasChildNodes()) {
-  let children = buttonRateOne.childNodes[0].textContent;
-  console.log(children);
-  for (let i = 0; i < firstRate; i++) {
-    console.log("go");
-    document.querySelector(".button-rate-one").childNodes[i].innerHTML = "star";
+leftStarsRate.addEventListener('click',()=>{
+  setRate(event,leftStarsRate,rateStarL)
+}) 
+rightStarsRate.addEventListener('click',()=>{
+  setRate(event,rightStarsRate,rateStarR)
+}) 
+function setRate(e,currentStarsRate,sideRate){
+  const currentIndex = Array.from(sideRate).lastIndexOf(e.target);
+  for (let i = 0;i<sideRate.length;i++){
+    currentStarsRate.childNodes[i].innerHTML = 'star_border'
   }
-} */
-
-let buttonRateOne = document.querySelector(".button-rate-one");
+  for (let i = 0;i<currentIndex+1;i++){
+    currentStarsRate.childNodes[i].innerHTML = 'star'
+  }
+}

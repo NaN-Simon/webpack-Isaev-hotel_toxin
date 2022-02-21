@@ -1,12 +1,9 @@
 .default.button-rate-block-size
   .tit3 Rate button 
-  .rate-group 
-    ul.button-rate-one.button-rate-color.material-icons
-      each val, index in ['star_border','star_border','star_border','star_border','star_border',]
-        li= val
-    .button-rate-second
-      .material-icons.button-rate-color star
-      .material-icons.button-rate-color star
-      .material-icons.button-rate-color star
-      .material-icons.button-rate-color star
-      .material-icons.button-rate-color star_border
+  .rate-group.material-icons 
+    ul.left-stars-rate
+      each val, index in ['star','star','star','star','star_border',]
+        li.rate-star= val
+    ul.right-stars-rate
+      each val, index in ['star','star','star','star','star',]
+        li.rate-star= val

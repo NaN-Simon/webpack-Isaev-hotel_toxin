@@ -13,12 +13,12 @@ $material-design-icons-font-directory-path: "~material-design-icons-iconfont/dis
   display: flex;
   justify-content: space-between;
 }
-.button-rate-color {
+
+.left-stars-rate,
+.right-stars-rate{
+  list-style-type: none;
+  display: flex;
   color: #8ba4f9;
   cursor: default;
   user-select: none;
-}
-ul.button-rate-one{
-  list-style-type: none;
-  display: flex;
 }
