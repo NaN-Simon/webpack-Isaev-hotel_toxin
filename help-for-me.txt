@@ -1,0 +1,2 @@
+Q: how to watch packet list?
+A: npm list --depth=0
