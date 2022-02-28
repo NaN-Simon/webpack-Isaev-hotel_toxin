@@ -1,0 +1,40 @@
+.pagination-header {
+  margin-bottom: 16px;
+}
+.pagination-pages {
+  position: relative;
+  display: flex;
+  margin-bottom: 10px;
+}
+.pagination-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.pagination-item.tit4.active {
+  position: relative;
+  color: white;
+}
+.pagination-item.tit4.active::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  background: #8ba4f9;
+  border-radius: 50%;
+  z-index: -1;
+}
+.pagination-to-end{
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(0deg, rgba(111,207,151,1) 0%, rgba(102,210,234,1) 100%);
+  border-radius: 50%;
+  right: 80px;
+  top: 0px;
+
+}

@@ -1,6 +1,9 @@
 $material-design-icons-font-directory-path: "~material-design-icons-iconfont/dist/fonts/";
 @import "~material-design-icons-iconfont/src/material-design-icons";
 
+.rate-star{
+  cursor: pointer;
+}
 .button-rate-block-size {
   height: 55px;
   display: flex;
