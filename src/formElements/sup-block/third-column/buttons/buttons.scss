@@ -1,0 +1,132 @@
+.default218 {
+  width: 218px;
+  height: 195px;
+}
+.button-title {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgba(31, 32, 65, 1);
+  margin-bottom: 16px;
+}
+.button-items {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-between;
+  height: 118px;
+  margin-bottom: 31px;
+}
+.button-item-type1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 99px;
+  height: 44px;
+  border-radius: 22px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  transition: 0.5s;
+  cursor: pointer;
+  background: #8ba4f9;
+  color: #ffffff;
+  &:hover{
+    background: #bc9cff;
+    opacity: 0.5;
+  }
+}
+.button-hover-type1 {
+  background: #bc9cff;
+  opacity: 0.5;
+}
+.button-item-type2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 99px;
+  height: 44px;
+  border-radius: 22px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  transition: 0.5s;
+  cursor: pointer;
+  border: 2px solid #bc9cff;
+  color: #bc9cff;
+  background: transparent;
+  &:hover{
+    border: 2px solid rgba(187, 156, 255, 0.5);
+    color: #bc9cff;
+    background: transparent;
+  }
+}
+.button-hover-type2{
+  border: 2px solid rgba(187, 156, 255, 0.5);
+  color: #bc9cff;
+  background: transparent;
+}
+
+.icon-click {
+  width: 142px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.icon-click-default,
+.icon-click-hover {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #bc9cff;
+  transition: 0.5s;
+  cursor: pointer;
+  &:hover{
+    color: rgba(31, 32, 65, 0.5);
+  }
+}
+.icon-click-hover {
+  color: rgba(31, 32, 65, 0.5);
+}
+.forward-pay{
+  position: relative;
+  width: 320px;
+  height: 44px;
+  cursor: pointer;
+}
+.forward-pay-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  height: 44px;
+  background: #8ba4f9;
+  border-radius: 22px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  transition: 0.5s;
+  color: #ffffff;
+  &:hover{
+    background: #bc9cff;
+    opacity: 0.5;
+  }
+}
+.arrow-forward{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: white;
+}
