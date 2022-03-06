@@ -1,9 +1,19 @@
-let dropdownExpendArrow = document.querySelector(".expand-arrow");
-let dropdownExpendAddOpen = dropdownExpendArrow.nextElementSibling;
-dropdownExpendArrow.addEventListener("click", function () {
+let dropdownExpandLink = document.querySelectorAll(".dropdown-expand__link");
+dropdownExpandLink.forEach((element)=>{
+  element.addEventListener('click',function(){
+    document.querySelector('.dropdown ul.dropdown-expand-list ul.sub-dropdown-expand-list').classList.toggle("open")
+    if(element.lastElementChild.innerHTML == 'expand_more'){
+			element.lastElementChild.innerHTML = 'expand_less'
+		} else {
+			element.lastElementChild.innerHTML = 'expand_more'
+		}
+  })
+})
+/* let dropdownExpendAddOpen = dropdownExpendArrow.nextElementSibling; */
+/* dropdownExpendArrow.addEventListener("click", function () {
   dropdownExpendAddOpen.classList.toggle("open");
-});
-
+}); */
+/* console.log(dropdownExpandList) */
 
 // Dropdown-buttons
 

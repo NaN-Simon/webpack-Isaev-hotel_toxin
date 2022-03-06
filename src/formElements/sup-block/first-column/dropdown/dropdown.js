@@ -1,8 +1,17 @@
-const dropdownArrow = document.querySelector(".dropdown-arrow");
+const dropdownList = document.querySelectorAll(".dropdown-list");
 const subDropdownList = document.querySelector(".sub-dropdown-list");
-dropdownArrow.addEventListener("click", function () {
-  subDropdownList.classList.toggle("open");
-});
+const dropdownExpand = document.querySelector('.dropdown ul span.material-icons');
+dropdownList.forEach((element)=>{
+  element.addEventListener('click',function(){
+    subDropdownList.classList.toggle("open")
+    if(dropdownExpand.innerHTML == 'expand_more'){
+      dropdownExpand.innerHTML = 'expand_less'
+    } else {
+      dropdownExpand.innerHTML = 'expand_more'
+    }
+  })
+})
+
 
 const subDropdownLink = document.querySelectorAll(".sub-dropdown__link");
 

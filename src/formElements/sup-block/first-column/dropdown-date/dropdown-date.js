@@ -1,11 +1,14 @@
-let arrowCustom = document.querySelectorAll(".arrow-custom");
-for(let i=0;i<arrowCustom.length;i++){
-	
-	let subMenu = arrowCustom[i].nextElementSibling;
-	let thisArrow = arrowCustom[i];
-	
-	arrowCustom[i].addEventListener("click",function(){
-		subMenu.classList.toggle("open")
-		thisArrow.classList.toggle("active")
+const dateDropdownList = document.querySelectorAll(".date-dropdown-list");
+const subDateDropdownList = document.querySelectorAll('.sub-date-dropdown-list')
+
+dateDropdownList.forEach((element)=>{
+	element.addEventListener('click',function(){
+		if(element.lastElementChild.innerHTML == 'expand_more'){
+			element.lastElementChild.innerHTML = 'expand_less'
+		} else {
+			element.lastElementChild.innerHTML = 'expand_more'
+		}
+		element.nextElementSibling.classList.toggle('open')
+			})
 		})
-	}
+

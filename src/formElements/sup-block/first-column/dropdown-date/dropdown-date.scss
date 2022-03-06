@@ -1,6 +1,6 @@
 $main-border: 1px solid rgba(31, 32, 65, 0.25);
 
-.date-dropdown{
+.date-dropdown {
   z-index: 1;
 }
 .date-dropdown-group {
@@ -16,6 +16,8 @@ $main-border: 1px solid rgba(31, 32, 65, 0.25);
 
 .date-dropdown-list {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   border: $main-border;
   border-radius: 5px;
   cursor: default;
@@ -52,4 +54,3 @@ $main-border: 1px solid rgba(31, 32, 65, 0.25);
 .sub-date-dropdown-list.open {
   display: flex;
 }
-

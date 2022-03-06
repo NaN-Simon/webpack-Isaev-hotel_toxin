@@ -14,7 +14,13 @@ body {
   margin-left: 30px;
   margin-top: 30px;
 }
-
+.material-icons.button-w-h-48 {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 h1,
 h2,
 h3,
@@ -35,7 +41,7 @@ h6 {
   display: flex;
   gap: 126px;
 }
-.main-form-element{
+.main-form-element {
   margin-left: 141px;
   margin-top: 65px;
 }
