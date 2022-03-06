@@ -4,7 +4,8 @@ import $ from "jquery";
 window.jQuery = jquery;
 window.$ = jquery;
 import "jquery-ui";
-
+import icon from "./formElements/icons/icon.svg"
+console.log(icon)
 $('.user').html('User is working')
 
 $(function(){

@@ -1,6 +1,4 @@
 $( function() {
-  console.log('jq tests')
-  
   $("#slider").slider();
 
   $( "#slider-range" ).slider({
