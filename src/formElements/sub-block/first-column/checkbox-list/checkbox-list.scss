@@ -56,9 +56,18 @@ h2 {
 .customCheckbox:checked + label:before {
   border-color: rgba(188, 156, 255, 1);
   background-color: #ffffff;
-  //background-image: url("../../../../../test.png");
+  background-image: url('../formElements/icons/check.svg');
+  //background-image: url('../images/check.svg');
 }
-/**/
+
+/* .test123{
+  background-image: url('../images/check.svg');
+  width: 100px;
+  height: 100px;
+  background-color: black;
+} */
+
+
 .checkbox-title {
   font-family: Montserrat-Regular;
   font-style: normal;
