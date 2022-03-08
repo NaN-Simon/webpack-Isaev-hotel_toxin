@@ -7,24 +7,24 @@
 //Form Elements
 @use "../formElements/icons/arrow.scss";
 @use "../formElements/icons/arrow-right.scss";
-@use "../formElements/sup-block/first-column/input-default/input-default.scss";
-@use "../formElements/sup-block/first-column/input-hover-focus/input-hover-focus.scss";
-@use "../formElements/sup-block/first-column/dropdown/dropdown.scss";
-@use "../formElements/sup-block/first-column/input-date/input-date.scss";
-@use "../formElements/sup-block/first-column/dropdown-date/dropdown-date.scss";
-@use "../formElements/sup-block/first-column/dropdown-filter/dropdown-filter.scss";
-@use "../formElements/sup-block/first-column/input-subscription/input-subscription.scss";
+@use "../components/input-default/input-default.scss";
+@use "../components/input-hover-focus/input-hover-focus.scss";
+@use "../components/dropdown/dropdown.scss";
+@use "../components/input-date/input-date.scss";
+@use "../components/dropdown-date/dropdown-date.scss";
+@use "../components/dropdown-filter/dropdown-filter.scss";
+@use "../components/input-subscription/input-subscription.scss";
 
-@use "../formElements/sup-block/second-column/checkbox-buttons/checkbox-buttons.scss";
-@use "../formElements/sup-block/second-column/checkbox-radio/checkbox-radio.scss";
-@use "../formElements/sup-block/second-column/checkbox-toggle/checkbox-toggle.scss";
-@use "../formElements/sup-block/second-column/button-like/button-like.scss";
-@use "../formElements/sup-block/second-column/button-rate/button-rate.scss";
+@use "../components/checkbox-buttons/checkbox-buttons.scss";
+@use "../components/checkbox-radio/checkbox-radio.scss";
+@use "../components/checkbox-toggle/checkbox-toggle.scss";
+@use "../components/button-like/button-like.scss";
+@use "../components/button-rate/button-rate.scss";
 
-@use "../formElements/sup-block/third-column/range-slider/range-slider.scss";
-@use "../formElements/sup-block/third-column/buttons/buttons.scss";
-@use "../formElements/sup-block/third-column/pagination/pagination.scss";
+@use "../components/range-slider/range-slider.scss";
+@use "../components/buttons/buttons.scss";
+@use "../components/pagination/pagination.scss";
 
 
-@use "../formElements/sub-block//first-column/dropdown-expanded/dropdown-expanded.scss";
-@use "../formElements/sub-block/first-column/checkbox-list/checkbox-list.scss";
+@use "../components/dropdown-expanded/dropdown-expanded.scss";
+@use "../components/checkbox-list/checkbox-list.scss";

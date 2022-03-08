@@ -38,12 +38,12 @@ require('webpack-jquery-ui/size-effect');
 require('webpack-jquery-ui/slide-effect');
 require('webpack-jquery-ui/transfer-effect'); */
 import './styles/index.scss';
-import './formElements/sup-block/first-column/dropdown/dropdown'
-import './formElements/sup-block/first-column/dropdown-date/dropdown-date'
-import './formElements/sup-block/first-column/input-subscription/input-subscription'
-import './formElements/sup-block/second-column/checkbox-buttons/checkbox-buttons'
-import './formElements/sup-block/second-column/button-like/button-like'
-import './formElements/sup-block/second-column/button-rate/button-rate'
-import './formElements/sup-block/third-column/range-slider/range-slider'
-import './formElements/sub-block/first-column/dropdown-expanded/dropdown-expanded'
-import './formElements/sub-block/first-column/checkbox-list/checkbox-list'
+import './components/dropdown/dropdown'
+import './components/dropdown-date/dropdown-date'
+import './components/input-subscription/input-subscription'
+import './components/checkbox-buttons/checkbox-buttons'
+import './components/button-like/button-like'
+import './components/button-rate/button-rate'
+import './components/range-slider/range-slider'
+import './components/dropdown-expanded/dropdown-expanded'
+import './components/checkbox-list/checkbox-list'
