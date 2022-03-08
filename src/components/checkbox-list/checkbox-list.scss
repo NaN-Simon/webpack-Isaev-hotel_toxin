@@ -1,5 +1,7 @@
 .checkbox-list-header-title {
+  width: 266px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 .mark-down {
@@ -12,10 +14,14 @@
   text-align: center;
 }
 .checkbox-list-items {
+  width: 266px;
   display: none;
   flex-direction: column;
 }
-.checkbox-list-items.open{
+.checkbox-list-items label{
+  width: 266px;
+}
+.checkbox-list-items.open {
   display: flex;
 }
 .checkbox-list-items label {
@@ -49,7 +55,8 @@
 .customCheckbox:checked + label:before {
   border-color: rgba(188, 156, 255, 1);
   background-color: #ffffff;
-  background-image: url('../assets/svg/check.svg');
+  background-image: url("../assets/svg/check.svg");
+  background-size: 10px;
 }
 .checkbox-title {
   font-family: Montserrat-Regular;
