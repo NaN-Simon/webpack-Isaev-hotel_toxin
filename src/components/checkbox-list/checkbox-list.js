@@ -1,6 +1,5 @@
-const checkboxListItemsMarkDownFirst =
-  document.querySelector(".mark-down-second");
-const checkboxListItems = document.querySelector(".checkbox-list-items");
+/* const checkboxListItemsMarkDownFirst = document.querySelector(".mark-down-second");
+
 let markDownSecondActive = false;
 checkboxListItemsMarkDownFirst.addEventListener("click", () => {
   if (markDownSecondActive == false) {
@@ -12,4 +11,16 @@ checkboxListItemsMarkDownFirst.addEventListener("click", () => {
     checkboxListItemsMarkDownFirst.innerHTML = "M";
     markDownSecondActive = false;
   }
-});
+}); */
+const checkboxList = document.querySelectorAll('.checkbox-list-header-title')
+const checkboxListItems = document.querySelector(".checkbox-list-items");
+checkboxList.forEach((element)=>{
+  element.addEventListener('click',function(){
+		if(element.lastElementChild.innerHTML == 'expand_more'){
+			element.lastElementChild.innerHTML = 'expand_less'
+		} else {
+			element.lastElementChild.innerHTML = 'expand_more'
+		}
+		element.nextElementSibling.classList.toggle('open')
+			})
+})

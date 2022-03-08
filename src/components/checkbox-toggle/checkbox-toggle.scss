@@ -36,7 +36,7 @@ $grey: rgba(31, 32, 65, 0.25);
   transition: 0.3s;
 }
 .custom-toggle-botton:checked::after {
-  transform: translateX(calc(100% + 9px));
+  transform: translateX(calc(100% + 8px));
   background-color: #8BA4F9;
 }
 .custom-toggle-botton:checked {

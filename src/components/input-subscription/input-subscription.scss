@@ -1,9 +1,25 @@
 $main-border: 1px solid rgba(31, 32, 65, 0.25);
-
+.subscription-form {
+  position: relative;
+}
 .input-email {
   width: 266px;
   height: 44px;
   border: $main-border;
   border-radius: 4px;
   padding-left: 15px;
+}
+.arrow_color_blue {
+  color: #8ba4f9;
+}
+.subscription-form .material-icons.arrow_color_blue {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  right: 0;
+  top: 0;
+  cursor: pointer;
 }

@@ -1,7 +1,12 @@
-let customArrowSub = document.querySelectorAll('.input-subscription-arrow-custom')
+let customArrowSub = document.querySelectorAll('.subscription-form .material-icons.arrow_color_blue')
 for (let arrow of customArrowSub) {
-	arrow.addEventListener('click',function(){
-		let email = document.querySelector('.input-email').value
-		console.log('sending to server: ' + email)
+	arrow.addEventListener('click',()=>{
+		sendEmail(event)
 	})
+}
+
+function sendEmail(event){
+	event.preventDefault();
+	let email = document.querySelector('.input-email').value
+		console.log('sending to server: ' + email)
 }

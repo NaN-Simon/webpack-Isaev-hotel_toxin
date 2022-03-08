@@ -1,12 +1,11 @@
 
 
 @use "global";
-@use "../colorsAndType/block/colors-and-type-colors.scss";
-@use "../colorsAndType/block/colors-and-type-style.scss";
+@use "../components/colors/colors.scss";
+@use "../components/type/type.scss";
 @use "fonts";
 //Form Elements
-@use "../formElements/icons/arrow.scss";
-@use "../formElements/icons/arrow-right.scss";
+
 @use "../components/input-default/input-default.scss";
 @use "../components/input-hover-focus/input-hover-focus.scss";
 @use "../components/dropdown/dropdown.scss";

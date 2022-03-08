@@ -2,16 +2,6 @@
   display: flex;
   align-items: center;
 }
-h2 {
-  font-family: Monserrat-Regular;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 15px;
-  color: #1f2041;
-  width: 192px;
-  height: 15px;
-  text-transform: uppercase;
-}
 .mark-down {
   font-style: normal;
   font-weight: normal;
@@ -24,6 +14,9 @@ h2 {
 .checkbox-list-items {
   display: none;
   flex-direction: column;
+}
+.checkbox-list-items.open{
+  display: flex;
 }
 .checkbox-list-items label {
   margin: 5px 0;
@@ -56,12 +49,8 @@ h2 {
 .customCheckbox:checked + label:before {
   border-color: rgba(188, 156, 255, 1);
   background-color: #ffffff;
-  background-image: url('../formElements/icons/check.svg');
+  background-image: url('../assets/svg/check.svg');
 }
-
-
-
-
 .checkbox-title {
   font-family: Montserrat-Regular;
   font-style: normal;
