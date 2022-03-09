@@ -1,20 +1,24 @@
-.form-elements__dropdowns-wrapper{
+.heading{
+  margin-bottom: 5px;
+}
+.form-elements__dropdowns-wrapper {
   width: 320px;
   height: 221px;
-  border: 1px solid #000;
 }
-.form-elements__dropdowns-container{
+.form-elements__dropdowns-container {
   position: relative;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  border-radius: 5px;
 }
-.dropdown-new{
-  width: 320px;
+.dropdown-new {
+  width: 318px;
   height: 44px;
   display: flex;
   align-items: center;
   padding-left: 15px;
-  border: 1px solid rgba(31, 32, 65, 0.5);
+  border-bottom: 1px solid rgba(31, 32, 65, 0.5);
 }
-.dropdown__arrow{
+.dropdown__arrow {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -24,3 +28,44 @@
   width: 44px;
   height: 44px;
 }
+.dropdown__drop {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
+  width: 320px;
+  height: 159px;
+}
+.dropdown__drop-string{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dropdown__drop-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  padding-left: 15px;
+  padding-right: 7px;
+}
+.dropdown_drop-change-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  margin: 0 12px;
+  color: rgba(31, 32, 65, 0.5);
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.dropdown-drop-item-button{
+  height: 40px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 7px;
+    align-items: center;
+}
+
