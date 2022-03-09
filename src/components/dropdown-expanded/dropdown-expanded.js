@@ -9,11 +9,6 @@ dropdownExpandLink.forEach((element)=>{
 		}
   })
 })
-/* let dropdownExpendAddOpen = dropdownExpendArrow.nextElementSibling; */
-/* dropdownExpendArrow.addEventListener("click", function () {
-  dropdownExpendAddOpen.classList.toggle("open");
-}); */
-/* console.log(dropdownExpandList) */
 
 // Dropdown-buttons
 

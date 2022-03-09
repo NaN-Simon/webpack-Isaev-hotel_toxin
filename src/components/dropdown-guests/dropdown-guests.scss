@@ -1,0 +1,26 @@
+.form-elements__dropdowns-wrapper{
+  width: 320px;
+  height: 221px;
+  border: 1px solid #000;
+}
+.form-elements__dropdowns-container{
+  position: relative;
+}
+.dropdown-new{
+  width: 320px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+.dropdown__arrow{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  top: 0;
+  width: 44px;
+  height: 44px;
+}
