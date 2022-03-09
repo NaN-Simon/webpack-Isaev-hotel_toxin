@@ -1,0 +1,15 @@
+.comfort,
+.convenience {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px 20px 20px 0;
+  border-bottom: 1px solid rgba(31, 32, 65, 0.1);
+}
+.comfort-smile,
+.convenience-building {
+  width: 48px;
+  height: 48px;
+  margin-right: 10px;
+  font-size: 48px;
+}
