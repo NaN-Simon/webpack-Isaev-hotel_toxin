@@ -1,12 +1,16 @@
 const dropdownDropGuests = document.querySelector(".dropdown__drop");
 toDoList();
 function toDoList() {
+  const firstPerson ="Взрослые";
+  const secondPerson ="Дети";
+  const thirdPerson ="Младенцы";
   let adultNum = 0;
   let childNum = 0;
   let babyNum = 0;
-  const adult = toDoPerson("Взрослые", adultNum);
-  const child = toDoPerson("Дети", childNum);
-  const baby = toDoPerson("Младенцы", babyNum);
+  let sumPerson = 0;
+  const adult = toDoPerson(firstPerson, adultNum);
+  const child = toDoPerson(secondPerson, childNum);
+  const baby = toDoPerson(thirdPerson, babyNum);
   dropdownDropGuests.innerHTML =
     `<div class="dropdown__drop-list">${adult + child + baby}</div>` +
     `<div class="dropdown-drop-item-button icon-click-default">Применить</div>`;
@@ -19,13 +23,35 @@ function toDoList() {
     const button = document.querySelectorAll(".dropdown__drop-list .dropdown__drop-string .dropdown__drop-item .dropdown__drop-change-button")
     button.forEach(elem=>{
       elem.addEventListener('click',()=>{
-        //console.log(elem.parentElement.children[1].innerHTML)
-        //console.log(Array.from(elem.parentElement.children).indexOf(elem))
         const currentString = Array.from(elem.parentElement.children)
-        if(currentString.indexOf(elem) == 0){console.log('minus',currentString[1].innerHTML = adultNum--)}
-        if(currentString.indexOf(elem) == 2){console.log('plus',currentString[1].innerHTML = adultNum++)}
+        const currentPlace = elem.parentNode.parentNode.children[0].innerHTML
+        if(currentString.indexOf(elem) == 0){
+          if(currentString[1].innerHTML != 0){
+            currentString[1].innerHTML = Number(currentString[1].innerHTML)-1
+            if(currentPlace==firstPerson){adultNum = Number(currentString[1].innerHTML)}
+            if(currentPlace==secondPerson){childNum = Number(currentString[1].innerHTML)}
+            if(currentPlace==thirdPerson){babyNum = Number(currentString[1].innerHTML)}
+          }
+        }
+        if(currentString.indexOf(elem) == 2){
+          if(currentString[1].innerHTML != 10){
+            currentString[1].innerHTML = Number(currentString[1].innerHTML)+1
+            if(currentPlace==firstPerson){adultNum = Number(currentString[1].innerHTML)}
+            if(currentPlace==secondPerson){childNum = Number(currentString[1].innerHTML)}
+            if(currentPlace==thirdPerson){babyNum = Number(currentString[1].innerHTML)}
+          }
+        }
+        sumPerson = adultNum+childNum+babyNum
+        console.log(sumPerson)
+        let dropDownTitle = document.querySelector(".form-elements__dropdowns-wrapper .form-elements__dropdowns-container .dropdown-new.tit4");
+        let showNumPerson = ""
+        if (sumPerson==0){dropDownTitle.innerHTML = "Сколько гостей"}
+        if (sumPerson==1 || sumPerson==21){dropDownTitle.innerHTML = sumPerson+" гость"}
+        if (sumPerson >=2 && sumPerson <=4 ||sumPerson >=22 && sumPerson <=24){dropDownTitle.innerHTML = sumPerson+" гостя"}
+        if (sumPerson >=5 && sumPerson <=20 ||sumPerson >=25 && sumPerson <=30){dropDownTitle.innerHTML = sumPerson+" гостей"}
       })
     })
   }
   listener()
 }
+
