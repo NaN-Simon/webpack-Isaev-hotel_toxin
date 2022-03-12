@@ -4,7 +4,7 @@ function toDoList() {
   const firstPerson ="Взрослые";
   const secondPerson ="Дети";
   const thirdPerson ="Младенцы";
-  let adultNum = 0;
+  let adultNum = 2;
   let childNum = 0;
   let babyNum = 0;
   let sumPerson = 0;
@@ -42,7 +42,6 @@ function toDoList() {
           }
         }
         sumPerson = adultNum+childNum+babyNum
-        console.log(sumPerson)
         let dropDownTitle = document.querySelector(".form-elements__dropdowns-wrapper .form-elements__dropdowns-container .dropdown-new.tit4");
         let showNumPerson = ""
         if (sumPerson==0){dropDownTitle.innerHTML = "Сколько гостей"}
@@ -54,4 +53,9 @@ function toDoList() {
   }
   listener()
 }
-
+/*hide button*/
+const dropdownGuests = document.querySelector('.form-elements__dropdowns-container .dropdown__button-area')
+dropdownGuests.addEventListener('click',()=>{
+  dropdownDropGuests.classList.toggle('open')
+  document.querySelector('.dropdown-new').classList.toggle('disable-border-botton')
+})

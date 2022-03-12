@@ -10,13 +10,19 @@
   border: 1px solid rgba(31, 32, 65, 0.5);
   border-radius: 5px;
 }
+.dropdown__button-area{
+  cursor: pointer;
+}
 .dropdown-new {
   width: 318px;
   height: 44px;
   display: flex;
   align-items: center;
   padding-left: 15px;
-  border-bottom: 1px solid rgba(31, 32, 65, 0.5);
+  border-bottom: none;
+}
+.dropdown-new.disable-border-botton{
+  border-bottom: 1px solid rgba(31, 32, 65, 0.5);;
 }
 .dropdown__arrow {
   position: absolute;
@@ -27,14 +33,18 @@
   top: 0;
   width: 44px;
   height: 44px;
+  cursor: pointer;
 }
 .dropdown__drop {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-between;
   align-content: space-between;
   width: 320px;
   height: 159px;
+}
+.dropdown__drop.open{
+  display: flex;
 }
 .dropdown__drop-string{
   display: flex;
