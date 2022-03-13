@@ -1,0 +1,18 @@
+.form-elements{
+  &__container{
+    width: 1158px;
+  }
+  &__dropdowns{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__dropdowns-block-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 712px;
+  }
+  &__lists{
+    display: flex;
+  }
+}

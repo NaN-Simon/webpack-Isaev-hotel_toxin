@@ -5,7 +5,7 @@
 @use "../components/type/type.scss";
 @use "fonts";
 //Form Elements
-
+@use "../pages/ui-kit-form-elements/form-elements-body.scss";
 @use "../components/input-default/input-default.scss";
 @use "../components/input-hover-focus/input-hover-focus.scss";
 @use "../components/dropdown/dropdown.scss";

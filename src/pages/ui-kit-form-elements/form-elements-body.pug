@@ -1,7 +1,7 @@
 body
   img.icon(src=require(`../../assets/svg/icon.svg`) alt='hotel_icon')
   main.main-form-element
-    .form-element-container
+    .form-elements__container
       .form-element-block
         .column
           include ../../components/input-default/input-default
@@ -17,15 +17,20 @@ body
           include ../../components/checkbox-toggle/checkbox-toggle
           include ../../components/button-like/button-like
           include ../../components/button-rate/button-rate
-          include ../../components/dropdown-guests/dropdown-guests
-          include ../../components/checkbox-rich-buttons/checkbox-rich-buttons
         .column
           include ../../components/range-slider/range-slider
           include ../../components/buttons/buttons
           include ../../components/pagination/pagination
-      .form-element-block  
-        .column
+      .form-elements__dropdowns
+        .form-elements__dropdowns-block-left
           include ../../components/dropdown-default/dropdown-default
           include ../../components/dropdown-expanded/dropdown-expanded
-          include ../../components/checkbox-list/checkbox-list
+        .form-elements__dropdowns-block-right
+          include ../../components/dropdown-guests/dropdown-guests
+          include ../../components/dropdown-guests/dropdown-guests
+      .form-elements__lists
+        include ../../components/checkbox-list/checkbox-list
+        include ../../components/checkbox-rich-buttons/checkbox-rich-buttons
+      .form-element-block  
+        .column
           include ../../components/comfort-and-convenience/comfort-and-convenience
