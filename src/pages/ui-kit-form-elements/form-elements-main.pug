@@ -1,0 +1,43 @@
+head
+  meta(charset='UTF-8')
+  title Form & Elements
+body
+  img.icon(src=require(`../../assets/svg/icon.svg`) alt='hotel_icon')
+  main.main-form-element
+    .form-elements__container
+      .form-elements__text-field-buttons
+        .column
+          //- include ../../components/input-default/input-default //todo delete
+          //- include ../../components/input-hover-focus/input-hover-focus //todo delete
+          include ../../components-v2/text-field/text-field
+          include ../../components-v2/text-field-hover/text-field-hover
+          include ../../components-v2/dropdown/dropdown
+          
+          //- include ../../components/dropdown/dropdown
+      //-     include ../../components/input-date/input-date
+      //-     include ../../components/dropdown-date/dropdown-date
+      //-     include ../../components/dropdown-filter/dropdown-filter
+      //-     include ../../components/input-subscription/input-subscription
+      //-   .column
+      //-     include ../../components/checkbox-buttons/checkbox-buttons
+      //-     include ../../components/checkbox-radio/checkbox-radio
+      //-     include ../../components/checkbox-toggle/checkbox-toggle
+      //-     include ../../components/button-like/button-like
+      //-     include ../../components/button-rate/button-rate
+      //-   .column
+      //-     include ../../components/range-slider/range-slider
+      //-     include ../../components/buttons/buttons
+      //-     include ../../components/pagination/pagination
+      //- .form-elements__dropdowns
+      //-   .form-elements__dropdowns-block-left
+      //-     include ../../components/dropdown-default/dropdown-default
+      //-     include ../../components/dropdown-expanded/dropdown-expanded
+      //-   .form-elements__dropdowns-block-right
+      //-     include ../../components/dropdown-guests/dropdown-guests
+      //-     include ../../components/dropdown-guests/dropdown-guests
+      //- .form-elements__lists
+      //-   include ../../components/checkbox-list/checkbox-list
+      //-   include ../../components/checkbox-rich-buttons/checkbox-rich-buttons
+      //- .form-element-block  
+      //-   .column
+      //-     include ../../components/comfort-and-convenience/comfort-and-convenience

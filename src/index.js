@@ -37,14 +37,16 @@ require('webpack-jquery-ui/shake-effect');
 require('webpack-jquery-ui/size-effect');
 require('webpack-jquery-ui/slide-effect');
 require('webpack-jquery-ui/transfer-effect'); */
+
 import './styles/index.scss';
-import './components/dropdown/dropdown'
-import './components/dropdown-date/dropdown-date'
-import './components/input-subscription/input-subscription'
-import './components/checkbox-buttons/checkbox-buttons'
-import './components/button-like/button-like'
-import './components/button-rate/button-rate'
-import './components/range-slider/range-slider'
-import './components/dropdown-expanded/dropdown-expanded'
-import './components/checkbox-list/checkbox-list'
-import './components/dropdown-guests/dropdown-guests'
+import './components-v2/dropdown/dropdown';
+// import './components/dropdown/dropdown';
+// import './components/dropdown-date/dropdown-date';
+// import './components/input-subscription/input-subscription';
+// import './components/checkbox-buttons/checkbox-buttons';
+// import './components/button-like/button-like';
+// import './components/button-rate/button-rate';
+// import './components/range-slider/range-slider';
+// import './components/dropdown-expanded/dropdown-expanded';
+// import './components/checkbox-list/checkbox-list';
+// import './components/dropdown-guests/dropdown-guests';
