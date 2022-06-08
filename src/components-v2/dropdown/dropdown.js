@@ -1,42 +1,32 @@
 let temp = (data = [], placeholder) => {
+
   const placeholderText = placeholder ?? 'Выберите колличество гостей';
-  // console.log(data)
+
+  const liElements =data.map(item=>{
+    return `
+      <li class="dropdown__item">
+        <div class="dropdown__item-type">${item.value}</div>
+        <div class="dropdown__item-counter" data-type="counter">
+          <div class="dropdown__item-minus" data-type="minus">-</div>
+          <div class="dropdown__item-vault">0</div>
+          <div class="dropdown__item-plus" data-type="plus">+</div>
+        </div>
+      </li>
+    `
+  })
   return `
-  <div class="dropdown__title">
-    <div class="tit3">DROPDOWN</div>
+    <div class="dropdown__title">
+      <div class="tit3">DROPDOWN</div>
     </div>
-  <div class="dropdown__title-list active" data-type="input">
-    ${placeholderText}
-    <div class="material-icons">
-      <span class="dropdown__btn" data-type="input">expand_more</span>
+      <div class="dropdown__title-list active" data-type="input">
+        ${placeholderText}
+        <div class="material-icons">
+        <span class="dropdown__btn" data-type="input">expand_more</span>
+        </div>
+      </div>
+      <div class="dropdown__items">
+      ${liElements.join('')}
     </div>
-  </div>
-  <div class="dropdown__items">
-  <li class="dropdown__item">
-  <div class="dropdown__item-type">Спальни</div>
-  <div class="dropdown__item-counter">
-    <div class="dropdown__item-minus">-</div>
-    <div class="dropdown__item-vault">0</div>
-    <div class="dropdown__item-plus">+</div>
-  </div>
-  </li>
-  <li class="dropdown__item">
-  <div class="dropdown__item-type">Кровати</div>
-  <div class="dropdown__item-counter">
-    <div class="dropdown__item-minus">-</div>
-    <div class="dropdown__item-vault">0</div>
-    <div class="dropdown__item-plus">+</div>
-  </div>
-  </li>
-  <li class="dropdown__item">
-  <div class="dropdown__item-type">Ванные комнаты</div>
-  <div class="dropdown__item-counter">
-    <div class="dropdown__item-minus">-</div>
-    <div class="dropdown__item-vault">0</div>
-    <div class="dropdown__item-plus">+</div>
-  </div>
-  </li>
-  </div>
   `;
 };
 
@@ -45,13 +35,27 @@ class Dropdown {
     this.$dropdown = document.querySelector(selector);
     this.options = options;
     this.#render();
+    this.#addData();
     this.#setup();
   }
-
+  
   #render() {
-    const { placeholder, data } = this.options;
+    let { placeholder, data } = this.options;
+    placeholder = this.#showPlaceholder()
     this.$dropdown.innerHTML = temp(data, placeholder);
   }
+  //меняем placeholder в соотвествии со значениями
+  #showPlaceholder(){
+    return 'HAHAHA'
+  }
+  //добавляем атрибуты к каждой li
+  #addData(){
+    this.$dropdownItem = this.$dropdown.querySelectorAll('.dropdown__item');
+    for (let i=0;i<this.$dropdownItem.length;i++) {
+      this.$dropdownItem[i].dataset.id = i;
+    }
+  }
+  //добавляем обработчик событий
   #setup() {
     this.clickHandler = this.clickHandler.bind(this);
     this.$dropdown.addEventListener('click', this.clickHandler);
@@ -67,23 +71,26 @@ class Dropdown {
         : (this.$arrow.innerHTML = 'expand_more');
     }
 
-    //обработка клика - смена результата в элементах списка
+    //обработка клика - смена результата в элементах списка и в data.score
     const { data } = this.options;
-    this.$dropdownItem = this.$dropdown.querySelectorAll('.dropdown__item');
-    const current = event.target.closest('.dropdown__item');
-    const minus = current.querySelector('.dropdown__item-minus');
-    const vault = current.querySelector('.dropdown__item-vault');
-    const plus = current.querySelector('.dropdown__item-plus');
+    const currentDataAttribute = event.target.getAttribute('data-type')
 
-    console.log(data)
-    if (vault.innerHTML >= 0) {
-      event.target === plus ? vault.innerHTML++ : false;
-    }
-    if (vault.innerHTML > 0) {
-      event.target === minus ? vault.innerHTML-- : false;
-    }
+    if(currentDataAttribute === 'plus' || currentDataAttribute === 'minus' ){
 
-    //TODO при нажатии менять data score
+      const current = event.target.closest('.dropdown__item');
+      const currentVault = current.querySelector('.dropdown__item-vault');
+      const currentDataId = data[current.getAttribute('data-id')];
+
+        if(currentVault.innerHTML >= 0 && type == 'plus') {
+          currentVault.innerHTML++
+          currentDataId.score++
+        }
+        if(currentVault.innerHTML > 0 && type == 'minus') {
+          currentVault.innerHTML--
+          currentDataId.score--
+        }
+
+    }
   }
 }
 
@@ -93,6 +100,7 @@ const dropdown = new Dropdown('#dropdown', {
     { id: '0', score: 0, value: 'Спальни' },
     { id: '1', score: 0, value: 'Кровати' },
     { id: '2', score: 0, value: 'Ванные комнаты' },
+    { id: '3', score: 0, value: 'TestROOM' },
   ],
 });
 window.dropdown = dropdown;
